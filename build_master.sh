@@ -58,8 +58,8 @@ echo "Modding .config file - "$KTVER
 sed -i 's,CONFIG_LOCALVERSION="-KT-NOTE4",CONFIG_LOCALVERSION="'$KTVER'",' .config
 
 HOST_CHECK=`uname -n`
-if [ $HOST_CHECK = 'ktoonsez-VirtualBox' ] || [ $HOST_CHECK = 'task650-Underwear' ]; then
-	echo "Ktoonsez/task650 24!"
+if [ $HOST_CHECK = 'ktoonsez-VirtualBox' ] || [ $HOST_CHECK = 'jamison-infamous' ]; then
+	echo "Jamison904!"
 	make -j24
 else
 	echo "Others! - " + $HOST_CHECK
